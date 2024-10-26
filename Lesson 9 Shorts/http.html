@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP</title>
+</head>
+<body>
+    
+    <!-- 
+    
+        Hypertext Transfer Protocol (HTTP)
+
+            In addition to protocols that dictate how informaton is communicated from machine to machine and application to application
+            (IP and TCP,respectively), it is frequently the case that the application itself has a system of rules for how to interpret
+            the data that was sent.
+
+            HTTP is one such example of an application layer protocol, which specifically dictact the format by which clients request
+                                                                                                                              -------
+            web pages from a server, and the format via which servers return informaton to clients.                                                                                                                    
+                                                                      ------  
+
+
+        Hypertext Transfer Protocol (HTTP) 
+        
+            Other application layer protocols include:
+
+                File Transfer Protocol (FTP)
+                Simple Mail Transfer Protocol (SMTP)
+                Data Distribution Service (DDS)
+                Remote Desktop Service (RDP)
+                Extensible Message and Presence Protocol (XMPP) 
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+        Hypertext Transfer Protocol (HTTP)
+                                                   
+                                                    
+                                                    |-------------------|
+                    |--------|                      |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                      |                   |   
+                    |--------|                      |         🐈‍⬛        |   
+                      you                           |-------------------|
+                                                           cats.com
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+        
+        Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            "Hey, can I             .             |-------------------|
+                    |--------|                    .          see your                             |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               homepage?"               .           |                   |   
+                    |--------|                    .                                               |         🐈‍⬛        |   
+                      you                            .                               .            |-------------------|
+                                                          .                      .                      cats.com
+                                                                  .        .  
+    
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+            Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            "Hey, can I             .                                                |-------------------|
+                    |--------|                    .          see your                             .      .                           |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               homepage?"               .        .                  .                  |                   |   
+                    |--------|                    .                                                                                  |         🐈‍⬛        |   
+                      you                            .                               .     .      "Of course, here        .          |-------------------|
+                                                          .                      .                 you go!"                                  cats.com
+                                                                  .        .             .                                  .
+                                                                                                                             
+                                                                                           .                            . 
+                                                                                                .    .        .     .
+
+
+
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+        
+        Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            GET / HTTP/1.1          .             |-------------------|
+                    |--------|                    .                                               |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               Host:cats.com            .           |                   |   
+                    |--------|                    .                                               |         🐈‍⬛        |   
+                      you                            .        ...                    .            |-------------------|
+                                                          .                      .                      cats.com
+                                                                  .        .  
+    
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+            Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            GET / HTTP/1.1          .                                                |-------------------|
+                    |--------|                    .                                               .      .                           |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               Host:cats.com            .        .                  .                  |                   |   
+                    |--------|                    .                                                                                  |         🐈‍⬛        |   
+                      you                            .       ...                     .     .      HTTP/1.1 200 OK         .          |-------------------|
+                                                          .                      .                                                         cats.com
+                                                                  .        .             .        content-type: text/html  .
+                                                                                                                             
+                                                                                           .       ...                   . 
+                                                                                                .    .        .     .
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+        
+        Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            "Hey, can I             .             |-------------------|
+                    |--------|                    .          see your                             |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               cats.html                .           |                   |   
+                    |--------|                    .          page?"                               |         🐈‍⬛        |   
+                      you                            .                               .            |-------------------|
+                                                          .                      .                      cats.com
+                                                                  .        .  
+    
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+            Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            "Hey, can I             .                                                |-------------------|
+                    |--------|                    .          see your                             .      .                           |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               cats.html                .        .                  .                  |                   |   
+                    |--------|                    .          page?"                                                                  |         🐈‍⬛        |   
+                      you                            .                               .     .     "Umm... we don't         .          |-------------------|
+                                                          .                      .               have a cats.html                           cats.com
+                                                                  .        .             .       page."                   .
+                                                                                                                             
+                                                                                           .                            . 
+                                                                                                .    .        .     .
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+        
+        
+        Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                            GET / HTTP/1.1          .             |-------------------|
+                    |--------|                    .                                               |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               Host:cats.com            .           |                   |   
+                    |--------|                    .                                               |         🐈‍⬛        |   
+                      you                            .      ...                      .            |-------------------|
+                                                          .                     .                      cats.com
+                                                                .       .
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+            Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                        GET / cats.html HTTP/1.1    .                                                |-------------------|
+                    |--------|                    .                                               .      .                           |       🐈‍⬛  🐈‍⬛      |
+                    |   😀   |                               Host:cats.com            .        .                  .                  |                   |   
+                    |--------|                    .                                                                                  |         🐈‍⬛        |   
+                      you                            .       ...                     .     .  HTTP/1.1 404 Not Found OK   .          |-------------------|
+                                                          .                      .            content-type: text/html                        cats.com
+                                                                  .        .             .     ...                        .
+                                                                                                                             
+                                                                                           .                             . 
+                                                                                                .    .        .     .
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+            Hypertext Transfer Protocol (HTTP)
+                                                   
+
+
+
+                                                                .       .
+                                                        .                    .
+                                                    .                             .
+                                                        GET / cats.html HTTP/1.1    .                                                |-------------------|
+                    |--------|                    .                                               .      .                           |       🐈‍⬛  🐈‍⬛      |
+                    |   🙁   |                               Host:cats.com            .        .                  .                  |                   |   
+                    |--------|                    .                                                                                  |         🐈‍⬛        |   
+                      you                            .       ...                     .     .  HTTP/1.1 404 Not Found OK   .          |-------------------|
+                                                          .                      .            content-type: text/html                        cats.com
+                                                                  .        .             .     ...                        .
+                                                                                                                             
+                                                                                           .                             . 
+                                                                                                .    .        .     .
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+            A line of form
+
+            method request-target http-verson
+
+            is a simple example of an HTTP request line, a crucial part of an overall HTTP request that a client may make to a server. 
+            
+            
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+            A line of form   
+            
+                method request-target HTTP/1.1
+
+            Is a simple example of an HTTP request line, a crucial part of an overall HTTP request that a client may make to a server.
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+            A line of form   
+            
+                GET method request-target HTTP/1.1
+
+            Is a simple example of an HTTP request line, a crucial part of an overall HTTP request that a client may make to a server.
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+            A line of form   
+            
+                POST method request-target HTTP/1.1
+
+            Is a simple example of an HTTP request line, a crucial part of an overall HTTP request that a client may make to a server.
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+
+            The host name (domain name of the server) is also included as a separate line of the overall HTTP request.
+            
+            Taken together, the host name and the request target from the request line specify a specific resource
+            being sought.
+
+            Based on whether the resource exists and whether the server is empowered to deliver that resource purrsuant
+            to the client's request, a number of status codes can result.
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+
+            A status code is part of the first line that a server will use to respond to an HTTP request.
+
+                        http-version status
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+
+            A status code is part of the first line that a server will use to respond to an HTTP request.
+
+                        HTTP/1.1 status
+
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+
+
+            |-----------------------------------------------------------------------------------|
+            |    Class   |    Code   |        Text        |              Comments               |
+            |-----------------------------------------------------------------------------------|
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-------------------------------------------------------------------------------------------|
+            |    Class   |    Code   |        Text        |              Comments                       |        
+            |-------------------------------------------------------------------------------------------|
+            |   Success  |    200    |        OK          | All is well,valid request and response.     |
+            |-------------------------------------------------------------------------------------------|
+
+
+            
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-----------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                       |        
+            |-----------------------------------------------------------------------------------------------|
+            |   Success     |    200    |        OK           | All is well,valid request and response.     |
+            |-----------------------------------------------------------------------------------------------|
+            |   Redirecton  |    301    |        Moved        | Page is now at new location, automatic      |
+            |               |           |      Permanently    | redirects built in to most browsers.        |     
+            |-----------------------------------------------------------------------------------------------|
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-----------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                       |        
+            |-----------------------------------------------------------------------------------------------|
+            |   Success     |    200    |        OK           | All is well,valid request and response.     |
+            |-----------------------------------------------------------------------------------------------|
+            |               |    301    |        Moved        | Page is now at new location, automatic      |
+            |  Redirecton   |           |      Permanently    | redirects built in to most browsers.        |
+            |               |-------------------------------------------------------------------------------|
+            |               |    302    |        Found        | Page is now at a new location temporarily.  |     
+            |-----------------------------------------------------------------------------------------------|
+
+
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-------------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                         |        
+            |-------------------------------------------------------------------------------------------------|
+            |   Success     |    200    |        OK           | All is well,valid request and response.       |
+            |-------------------------------------------------------------------------------------------------|
+            |               |    301    |        Moved        | Page is now at new location, automatic        |
+            |  Redirecton   |           |      Permanently    | redirects built in to most browsers.          |
+            |               |---------------------------------------------------------------------------------|
+            |               |    302    |        Found        | Page is now at a new location temporarily.    |     
+            |-------------------------------------------------------------------------------------------------|
+            |               |    401    |     Unauthorised    | Page is typically requires logn credentials.  |
+            | Client Error  |           |                     |                                               |
+            |               |---------------------------------------------------------------------------------|
+            |               |
+            |---------------|
+
+
+
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-------------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                         |        
+            |-------------------------------------------------------------------------------------------------|
+            |   Success     |    200    |        OK           | All is well,valid request and response.       |
+            |-------------------------------------------------------------------------------------------------|
+            |               |    301    |        Moved        | Page is now at new location, automatic        |
+            |  Redirecton   |           |      Permanently    | redirects built in to most browsers.          |
+            |               |---------------------------------------------------------------------------------|
+            |               |    302    |        Found        | Page is now at a new location temporarily.    |     
+            |-------------------------------------------------------------------------------------------------|
+            |               |    401    |     Unauthorised    | Page is typically requires logn credentials.  |        
+            |               |---------------------------------------------------------------------------------|
+            | Client Error  |    403    |     Forbidden       | Server will not allow this request.           |  
+            |               |---------------------------------------------------------------------------------|
+            |               |           
+            |---------------|
+
+
+            
+        --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |-------------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                         |        
+            |-------------------------------------------------------------------------------------------------|
+            |   Success     |    200    |        OK           | All is well,valid request and response.       |
+            |-------------------------------------------------------------------------------------------------|
+            |               |    301    |        Moved        | Page is now at new location, automatic        |
+            |  Redirecton   |           |      Permanently    | redirects built in to most browsers.          |
+            |               |---------------------------------------------------------------------------------|
+            |               |    302    |        Found        | Page is now at a new location temporarily.    |     
+            |-------------------------------------------------------------------------------------------------|
+            |               |    401    |     Unauthorised    | Page is typically requires logn credentials.  |        
+            |               |---------------------------------------------------------------------------------|
+            | Client Error  |    403    |     Forbidden       | Server will not allow this request.           |  
+            |               |---------------------------------------------------------------------------------|
+            |               |    404    |      Not Found      | Server cannot find what was ask for.          |
+            |---------------|---------------------------------------------------------------------------------|
+
+
+        -------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+        Hypertext Transfer Protocol (HTTP)
+
+        
+
+            |---------------------------------------------------------------------------------------------------|
+            |    Class      |    Code   |        Text         |              Comments                           |        
+            |---------------------------------------------------------------------------------------------------|
+            |   Success     |    200    |    OK               |   All is well,valid request and response.       |
+            |---------------------------------------------------------------------------------------------------|
+            |               |    301    |    Moved            |   Page is now at new location, automatic        |
+            |  Redirecton   |           |    Permanently      |   redirects built in to most browsers.          |
+            |               |-----------------------------------------------------------------------------------|
+            |               |    302    |    Found            |   Page is now at a new location temporarily.    |     
+            |---------------------------------------------------------------------------------------------------|
+            |               |    401    |    Unauthorised     |   Page is typically requires logn credentials.  |        
+            |               |-----------------------------------------------------------------------------------|
+            | Client Error  |    403    |    Forbidden        |   Server will not allow this request.           |  
+            |               |-----------------------------------------------------------------------------------|
+            |               |    404    |    Not Found        |   Server cannot find what was ask for.          |
+            |---------------|-----------------------------------------------------------------------------------|
+            | Server Error  |    500    |    Internal Server  |   Generic server failure in respond to the      |    
+            |               |           |    Error            |   other-wise valid request.                     |            
+            |---------------------------------------------------------------------------------------------------|
+
+
+
+
+
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+
+</body>
+</html>
