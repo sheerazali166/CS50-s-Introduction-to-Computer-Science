@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geolocation</title>
+</head>
+<body>
+
+    <!-- Interestingly, we can also geolocate using JavaScript: -->
+
+    <script>
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+
+            document.write(position.coords.latitude + ', ' + position.coords.longitude);
+
+        });
+
+    </script>
+
+    <!-- Notice that navigator.geolocation is used to getCurrentPosition. This will not work if your computer or browser does
+    not allow for location tracking. -->
+
+    <!-- The capabilities of JavaScript are many and can be found in the JavaScript Documentation. -->
+
+
+    <!-- Summing Up -->
+
+        <!-- In this lesson, you learned how to create your own HTML files, style them, leverage third-party frameworks, and utilize
+        JavaScript. Specifically, we discussed… -->
+
+
+        <!-- TCP/IP
+             DNS
+             HTML
+             Regular expressions.
+             CSS
+             Frameworks
+             JavaScript -->
+
+
+    
+    <!-- See you next time! -->
+
+
+
+</body>
+</html>

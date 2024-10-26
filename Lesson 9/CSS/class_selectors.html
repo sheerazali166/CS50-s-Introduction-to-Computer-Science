@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates class selectors -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+
+        .centered {
+
+            text-align: center;
+        }
+
+        .large {
+
+            font-size: large;
+        }
+
+        .medium {
+
+            font-size: medium;
+        }
+
+        .small {
+
+            font-size: small;
+        }
+
+    </style>
+</head>
+<body class="centered">
+    
+    <!-- This practice of placing the style and information all in the same location is not good practice. We could move the elements of style to
+    the top of the file as follows: -->
+
+    <header class="large">
+        John Harvard
+    </header>
+
+    <main class="medium">
+        Welcome to my home page!
+    </main>
+
+    <footer class="small">
+        Copyright &#169 John Harvard
+    </footer>
+
+    <!-- Notice all the style tags are placed up in the head in the style tag wrapper. Also notice that we’ve assigned classes, called centered, large,
+    medium, and small to our elements, and that we select those classes by placing a dot before the name, as in .centered -->
+
+
+</body>
+</html>

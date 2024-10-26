@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates pattern attribute -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    
+    <!-- While the browser uses these built-in attributes to check for an email address, we can add a pattern attribute to ensure that only specifi
+    data ends up in the email address: -->
+
+    <form>
+        <input autocomplete="off" autofocus name="email" pattern=".+@.+\.edu" placeholder="Email" type="email">
+        <button>Register</button>
+    </form>
+
+    <!-- Notice that the pattern attribute is handed a regular expression to denote that the email address must include an @ symbol and a .edu. -->
+    <!-- You can learn more about regular expressions from Mozilla’s documentation. Further, you can make inquiries to cs50.ai for hints. -->
+
+
+    
+</body>
+</html>

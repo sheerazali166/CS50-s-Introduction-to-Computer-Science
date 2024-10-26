@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Removes outer DIV -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+</head>
+<body style="text-align: center;">
+    
+    <!-- While correct, the above is not well-designed. We can remove redundancy by modifying our code as follows: -->
+
+    <div style="font-size: large;">
+        John Harvard
+    </div>
+    <div style="font-size: medium;">
+        Welocome to my home page!
+    </div>
+    <div style="font-size: small;">
+        Copyright &#169 John Harvard
+    </div>
+
+    <!-- Notice that <div> tags are used to divide up this HTML file into specific regions. text-align: center is invoked on the entire body of the HTML.
+    Because everything inside body is a child of body, the center attribute cascades down to those children. -->
+
+</body>
+</html>

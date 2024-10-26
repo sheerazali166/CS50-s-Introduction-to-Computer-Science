@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blink</title>
+
+    <script>
+
+        // Toggle visibility of greeting
+        function blink() {
+
+            let body = document.querySelector('body');
+
+            if (body.style.visibility == 'hidden') {
+
+                body.style.visibility = 'visible';
+
+            } else {
+
+                body.style.visibility = 'hidden';
+            }
+        }
+
+        // Blink every 500ms
+        window.setInterval(blink, 500);  
+
+    </script>
+
+
+</head>
+<body>
+
+    <!-- Similarly, consider the following: -->
+
+    hello, world
+
+    <!-- This example blinks a text at a set interval. Notice that window.setInterval takes in two arguments: A function to be called and a wait
+    period (in milliseconds) between function calls. -->
+
+</body>
+</html>

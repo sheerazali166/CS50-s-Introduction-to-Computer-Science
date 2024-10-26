@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates DOMContentLoaded -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').addEventListener('submit', function(e) {
+                alert('hello, ' + document.querySelector('#name').value);
+                e.preventDefault();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- Generally, it’s considered bad design to mix onsubmit and JavaScript. We can advance our code as follows: -->
+
+    <form>
+        <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+
+    <!-- Notice that this version of the code creates an addEventListener to listen to the form submit being triggered. Notice how DOMContentLoaded
+    ensures that the whole page is loaded before executing the JavaScript. -->
+
+    <!-- JavaScript allows you to dynamically read and modify the html document loaded into memory such that the user need not reload to see changes. -->
+
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!-- Demonstrate onsubmit -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function greet() {
+
+            alert('hello, ' + document.querySelector('#name').value);
+        }
+
+
+    </script>
+
+    <title>hello</title>
+
+</head>
+<body>
+    <form onsubmit="greet(); return false;">
+        <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+
+    <!-- Notice how this form uses an onsubmit property to trigger a script found at the top of the file. The script uses alert to create
+    an alert pop-up. #name.value goes to the textbox on the page and obtains the value typed by the user. -->
+
+</body>
+</html>
